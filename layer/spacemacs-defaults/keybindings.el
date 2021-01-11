@@ -487,16 +487,16 @@
   :off (toggle-frame-maximized)
   :documentation "Maximize the current frame."
   :evil-leader "TM")
-(spacemacs|add-toggle mode-line
-  :status (not hidden-mode-line-mode)
-  :on (hidden-mode-line-mode -1)
-  :off (hidden-mode-line-mode)
-  :documentation "Toggle the visibility of modeline."
-  :evil-leader "tmT")
-(spacemacs|add-toggle display-time
-  :mode display-time-mode
-  :documentation "Display time in modeline."
-  :evil-leader "tmt")
+;; (spacemacs|add-toggle mode-line
+;;   :status (not hidden-mode-line-mode)
+;;   :on (hidden-mode-line-mode -1)
+;;   :off (hidden-mode-line-mode)
+;;   :documentation "Toggle the visibility of modeline."
+;;   :evil-leader "tmT")
+;; (spacemacs|add-toggle display-time
+;;   :mode display-time-mode
+;;   :documentation "Display time in modeline."
+;;   :evil-leader "tmt")
 (spacemacs|add-toggle syntax-highlighting
   :mode font-lock-mode
   :documentation "Toggle syntax highlighting."
