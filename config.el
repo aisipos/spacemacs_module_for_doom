@@ -64,23 +64,32 @@ defer call using `spacemacs-post-user-config-hook'."
 
 ;;; Load & Setup other core libraries
 
+(load! (concat spacemacs-module-path "core/core-fonts-support.el"))
+(load! (concat spacemacs-module-path "core/core-themes-support.el"))
+
 (load! (concat spacemacs-module-path "core/core-funcs.el"))
 (load! (concat spacemacs-module-path "core/core-keybindings.el"))
 (load! (concat spacemacs-module-path "core/core-transient-state.el"))
 (load! (concat spacemacs-module-path "core/core-toggle.el"))
+
+(load! (concat spacemacs-module-path "core/core-use-package-ext.el"))
+(load! (concat spacemacs-module-path "core/core-versions.el"))
+(load! (concat spacemacs-module-path "core/core-progress-bar.el"))
+(load! (concat spacemacs-module-path "core/core-configuration-layer.el"))
 (setq spacemacs-post-user-config-hook-run t)
 
 ;;; Other Configurations
 
 (setq which-key-idle-delay 0.4)
 (setq which-key-idle-secondary-delay 0.1)
+(setq dotspacemacs-smooth-scrolling nil)
 (setq version-control-diff-tool 'git-gutter)
 
 ;;; map
 
 ;; unmap the doom original key prefix
 (map! :leader
-      "gg" nil
+      ;; "gg" nil
       "bN" nil
       "bN" nil
       "fe" nil
@@ -88,7 +97,7 @@ defer call using `spacemacs-post-user-config-hook'."
       "fy" nil
       "hP" nil
       "hT" nil
-      "tt" nil
+      ;; "tt" nil
       "wc" nil
       "x" nil)
 
@@ -210,14 +219,14 @@ Spacemacs use spacemacs-.*-mode-map, we here use original mode map."
 
 
 ;; version control layer
-;; (load! (concat spacemacs-module-path "layer/version-control/packages.el"))
+(load! (concat spacemacs-module-path "layer/version-control/packages.el"))
 (load! (concat spacemacs-module-path "layer/version-control/keybindings.el"))
 (load! (concat spacemacs-module-path "layer/version-control/funcs.el"))
 (load! (concat spacemacs-module-path "layer/version-control/config.el"))
-;; (version-control/init-vc)
+(version-control/init-vc)
 ;; (version-control/init-diff-mode)
 ;; (version-control/init-diff-hl)
-;; (version-control/post-init-evil-unimpaired)
+(version-control/post-init-evil-unimpaired)
 ;; (version-control/init-git-gutter)
 ;; ;;(version-control/init-git-gutter-fringe)
 ;; (version-control/init-git-gutter+)
