@@ -57,8 +57,8 @@ defer call using `spacemacs-post-user-config-hook'."
 
 ;;; Load & Setup core-spacemacs-buffer.el
 
-(load! (concat spacemacs-module-path "core/libs/page-break-lines.el"))
-(require 'page-break-lines)
+;; (load! (concat spacemacs-module-path "core/libs/page-break-lines.el"))
+;; (require 'page-break-lines)
 (load! (concat spacemacs-module-path "core/core-spacemacs-buffer.el"))
 (setq spacemacs-buffer-name "*Home*") ; setup the dashboard name
 
@@ -239,13 +239,13 @@ Spacemacs use spacemacs-.*-mode-map, we here use original mode map."
 
 
 ;; github layer
-(load! (concat spacemacs-module-path "layer/github/funcs.el"))
-(load! (concat spacemacs-module-path "layer/github/packages.el"))
-(when (featurep! :tools magit)
-  (github/init-forge))
-(github/init-gist)
-(github/init-github-clone)
-(github/init-github-search)
+;; (load! (concat spacemacs-module-path "layer/github/funcs.el"))
+;; (load! (concat spacemacs-module-path "layer/github/packages.el"))
+;; (when (featurep! :tools magit)
+;;   (github/init-forge))
+;; (github/init-gist)
+;; (github/init-github-clone)
+;; (github/init-github-search)
 ;; github/init-spacemacs-github ()
 
 
