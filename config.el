@@ -307,7 +307,7 @@ Spacemacs use spacemacs-.*-mode-map, we here use original mode map."
   ;; (spacemacs-evil/init-evil-anzu)
   ;; (spacemacs-evil/init-evil-args)
   ;; (spacemacs-evil/init-evil-cleverparens)
-  ;; (spacemacs-evil/init-evil-ediff)
+  (spacemacs-evil/init-evil-ediff)
   ;; (spacemacs-evil/init-evil-escape)
   ;; (spacemacs-evil/init-evil-exchange)
   ;; (spacemacs-evil/init-evil-goggles)
