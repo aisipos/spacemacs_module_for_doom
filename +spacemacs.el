@@ -41,9 +41,9 @@
 ;; (load! (concat spacemacs-module-path "spacemacs/core/core-fonts-support.el"))
 ;; TODO: evilified-state-evilify-map seems to have conflict with the doom
 ;; setting, like the leader key setting.
-;; (use-package! evil-evilified-state
-;;   :load-path
-;;   (concat spacemacs-module-path "evil-evilified-state")
+(use-package! evil-evilified-state
+  :load-path
+  (concat spacemacs-module-path "evil-evilified-state")
 
 ;; (require 'bind-map)
 ;; (require 'core-funcs)
