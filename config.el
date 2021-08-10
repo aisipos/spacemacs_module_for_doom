@@ -252,8 +252,8 @@ Spacemacs use spacemacs-.*-mode-map, we here use original mode map."
 ;; spacemacs navigation layer
 (load! (concat spacemacs-module-path "layer/spacemacs-navigation/funcs.el"))
 (load! (concat spacemacs-module-path "layer/spacemacs-navigation/packages.el"))
-(spacemacs-navigation/init-auto-highlight-symbol)
-(spacemacs-navigation/init-symbol-overlay)
+;; (spacemacs-navigation/init-auto-highlight-symbol)
+;; (spacemacs-navigation/init-symbol-overlay)
 
 
 ;; spacemacs layouts layer
