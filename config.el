@@ -304,6 +304,7 @@ Spacemacs use spacemacs-.*-mode-map, we here use original mode map."
   (load! (concat spacemacs-module-path "layer/spacemacs-evil/config.el"))
   (load! (concat spacemacs-module-path "layer/spacemacs-evil/funcs.el"))
   (load! (concat spacemacs-module-path "layer/spacemacs-evil/packages.el"))
+  (load! (concat spacemacs-module-path "layer/evil-evilified-state/evil-evilified-state.el"))
   ;; (spacemacs-evil/init-evil-anzu)
   ;; (spacemacs-evil/init-evil-args)
   ;; (spacemacs-evil/init-evil-cleverparens)
