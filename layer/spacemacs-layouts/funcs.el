@@ -808,3 +808,9 @@ containing the buffer."
                (append (persp-parameter 'gui-eyebrowse-window-configs persp)
                        (persp-parameter 'term-eyebrowse-window-configs persp)))
         (eyebrowse--rename-window-config-buffers window-config old new)))))
+
+;; persp-mode stuff
+(defun spacemacs/compleseus-spacemacs-layout-layouts ()
+  (interactive)
+  (spacemacs//create-persp-with-home-buffer
+   (completing-read "Layouts:" (persp-names))))
