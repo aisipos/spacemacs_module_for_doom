@@ -420,4 +420,16 @@ set."
   (funcall spacemacs--gne-line-func
            (buffer-substring (point-at-bol) (point-at-eol))))
 
+(defmacro evil-redirect-digit-argument (map keys target)
+  "This is a temporary fix.
+This is a temporary fix until the PR at URL
+`https://github.com/syl20bnr/evil-iedit-state/pull/37' gets
+merged. Please remove this function as soon as the mentioned PR
+gets merged."
+  (message "This is a temporary fix until
+https://github.com/syl20bnr/evil-iedit-state/pull/37 gets merged.
+Please remove this function as soon as the mentioned PR gets
+merged.")
+  `(define-key ,map ,keys ,target))
+
 (provide 'core-funcs)
