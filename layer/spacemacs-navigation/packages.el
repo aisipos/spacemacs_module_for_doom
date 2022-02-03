@@ -89,7 +89,7 @@
                (cancel-timer ahs-idle-timer)
                (setq ahs-idle-timer 0))
         :documentation "Automatic highlight of current symbol."
-        :evil-leader "tha")
+        :evil-leader "ta")
       ;; (spacemacs/add-to-hooks 'auto-highlight-symbol-mode '(prog-mode-hook
       ;;                                                       markdown-mode-hook)))
       (add-hook 'auto-highlight-symbol-mode '(prog-mode-hook
