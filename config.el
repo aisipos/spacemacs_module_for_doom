@@ -68,6 +68,8 @@ defer call using `spacemacs-post-user-config-hook'."
 (load! (concat spacemacs-module-path "core/core-keybindings.el"))
 (load! (concat spacemacs-module-path "core/core-transient-state.el"))
 (load! (concat spacemacs-module-path "core/core-toggle.el"))
+(load! (concat spacemacs-module-path "core/core-fonts-support.el"))
+(load! (concat spacemacs-module-path "layer/evil-evilified-state/evil-evilified-state.el"))
 (setq spacemacs-post-user-config-hook-run t)
 
 ;;; Other Configurations
