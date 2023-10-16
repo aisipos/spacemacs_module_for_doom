@@ -291,11 +291,11 @@
     ;; too intrusive and disrupts lsp
     (define-advice company-capf (:around (orig-fun &rest args) set-completion-styles)
       ;; when lsp is on stay away
-      (if lsp-completion-mode
-          (apply orig-fun args)
-        (let ((completion-styles '(basic partial-completion orderless)))
-          (apply orig-fun args))))
-
+      (if (boundp 'lsp-completion-mode)
+          (if lsp-completion-mode
+              (apply orig-fun args)
+            (let (completion-styles '(basic partial-completion orderless))
+              (apply orig-fun args)))))
     (setq orderless-component-separator "[ &]")
 
     ;; should be all in with orderless other wise the results are inconsistent.
